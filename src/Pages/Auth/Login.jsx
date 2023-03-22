@@ -32,24 +32,23 @@ let navigate=useNavigate()
   const { successPopup, errorPopup } = useMessagePopup();
 
   const onSubmit = useCallback(async (e) => {
-
-    // e.preventDefault();
-    // const validator = new Validator(formData, {
-    //   email: 'required|email',
-    //   password: "required"
-    // });
-    // setValidation(validator);
-    // if (validator.fails()) return;
+    e.preventDefault();
+    const validator = new Validator(formData, {
+      email: 'required|email',
+      password: "required"
+    });
+    setValidation(validator);
+    if (validator.fails()) return;
 
 
     try {
       navigate('/')
-      // let { status, message } = await login(formData);
-      // if (status) {
-      //   successPopup({ message: message });
-      //   setTimeout(() => {
-      //   }, 2000);
-      // }
+      let { status, message } = await login(formData);
+      if (status) {
+        successPopup({ message: message });
+        // setTimeout(() => {
+        // }, 2000);
+      }
 
     } catch (error) {
       errorPopup(error);
@@ -108,7 +107,7 @@ let navigate=useNavigate()
                   <Link to={'/verify-email'} className="forgot-pwd">Forgot Password?</Link>
                 </div>
                 <div className="my-5 text-center">
-                  <button type='submit' className="general-btn px-5" onClick={onSubmit}>LOGIN</button>
+                  <button type='submit' className="general-btn px-5" onClick={()=>onSubmit()}>LOGIN</button>
                 </div>
               </form>
             </div>
