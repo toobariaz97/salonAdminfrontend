@@ -42,10 +42,10 @@ let navigate=useNavigate()
 
 
     try {
-      navigate('/')
       let { status, message } = await login(formData);
       if (status) {
         successPopup({ message: message });
+        navigate('/')
         // setTimeout(() => {
         // }, 2000);
       }
@@ -107,7 +107,7 @@ let navigate=useNavigate()
                   <Link to={'/verify-email'} className="forgot-pwd">Forgot Password?</Link>
                 </div>
                 <div className="my-5 text-center">
-                  <button type='submit' className="general-btn px-5" onClick={()=>onSubmit()}>LOGIN</button>
+                  <button type='submit' className="general-btn px-5" onClick={onSubmit}>LOGIN</button>
                 </div>
               </form>
             </div>

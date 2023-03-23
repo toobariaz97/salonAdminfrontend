@@ -19,7 +19,8 @@ export const Navbar = () => {
               </li>
               <li className="nav-item">
                 <Link className="navbar-brand" href="/">
-                  <img className="brand-logo img-fluid" alt="admin logo" src="images/logo.png" /> </Link> </li>
+                  <img className="brand-logo img-fluid" alt="admin logo" src="images/logo.png" 
+                 /> </Link> </li>
               <li className="nav-item d-md-none">
                 <a className="nav-link open-navbar-container" data-bs-toggle="collapse" data-bs-target="#navbar-mobile">
                   <i className="fa fa-ellipsis-v" /></a>

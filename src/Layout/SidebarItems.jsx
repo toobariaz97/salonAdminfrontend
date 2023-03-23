@@ -14,8 +14,8 @@ export const SidebarItems = [
  
   },
   {
-    title: "Vendor Management",
-    path:'/vendor',
+    title: "Salon Management",
+    path:'/salon',
     icon: '/images/s-3.png',
     cName: 'nav-item',
  

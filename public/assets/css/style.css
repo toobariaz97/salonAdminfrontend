@@ -50,7 +50,7 @@
 
 .header-navbar .navbar-container ul.nav li a.menu-toggle i {
     font-size: 2rem;
-    color: #C8AA61;
+    color: #D78BB9;
 }
 
 .dropdown-notification span.badge {
@@ -243,7 +243,7 @@ html body .content-wrapper {
     }
 
     body.vertical-layout.vertical-menu .navbar .navbar-brand img {
-        height: 100px;
+        height: 74px;
         object-fit: contain;
         object-position: center;
         margin-left: 18px;
@@ -403,7 +403,7 @@ ul.nav.navbar-nav.nav-right {
 }
 
 body.vertical-layout.vertical-menu .navbar .navbar-brand img {
-    height: 74px;
+    /* height: 74px; */
     object-fit: contain;
     object-position: center;
     margin: 12px 0;
@@ -429,7 +429,7 @@ body.vertical-layout.vertical-menu .navbar .navbar-brand img {
 .main-menu.menu-light .navigation>li.hover>a {
     color: #000 !important;
     border-bottom-right-radius: 0px;
-    background: #e5bb45 !important;
+    background: #D78BB9 !important;
     position: relative;
 }
 
@@ -751,7 +751,7 @@ in-menu.menu-light .navigation>li ul li:hover {
 }
 
 .page-item .page-link:hover {
-    background: #f1ae10;
+    background: #D78BB9;
     color: #000
 }
 
@@ -7963,8 +7963,8 @@ button.slick-prev {
     font-weight: 500;
     padding: 8px 20px;
     font-family: 'Rubik';
-    background: #E5BB45;
-    border: 1px solid #E5BB45;
+    background: #D78BB9;
+    border: 1px solid #D78BB9;
     transition: 0.3s ease-in-out;
     border-radius: 5px;
 }

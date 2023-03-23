@@ -43,7 +43,7 @@ export const Router = () => {
 
 
     {/* //vendor */}
-    <Route path='/vendor' element={<PrivateRoutes><VendorListing/></PrivateRoutes>}></Route>
+    <Route path='/salon' element={<PrivateRoutes><VendorListing/></PrivateRoutes>}></Route>
     <Route path='vendor-detail/:id' element={<PrivateRoutes><ViewVendor/></PrivateRoutes>}></Route>
 
 
